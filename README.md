@@ -1,4 +1,4 @@
-# 📌 Assignment A — UPI Payment Flow with SMS Confirmation 💳📲
+# 📌 Assignment A — UPI Payment Flow with SMS Confirmation 💳
 
 ## Overview 📝
 
