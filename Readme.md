@@ -1,4 +1,4 @@
-# Assignment A — UPI Payment Flow
+# Assignment A — UPI Payment Flow with SMS Confirmation
 
 ## Overview
 
@@ -20,7 +20,7 @@ It demonstrates a simple **UPI payment flow** with a simulated SMS-based payment
 ## Tech Stack
 
 * HTML, CSS, JavaScript
-* Hosted on **Vercel / Netlify**
+* Hosted on **Vercel**
 * Designed for **mobile browsers** (UPI apps only open on mobile)
 
 ---
