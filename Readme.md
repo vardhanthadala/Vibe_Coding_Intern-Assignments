@@ -17,6 +17,12 @@ It demonstrates a simple **UPI payment flow** with a simulated SMS-based payment
 
 ---
 
+## Hosted on Vercel 
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=flat-square)](https://vibe-coding-intern-assignment.vercel.app/)
+
+---
+
 ## Tech Stack
 
 * HTML, CSS, JavaScript
@@ -25,25 +31,7 @@ It demonstrates a simple **UPI payment flow** with a simulated SMS-based payment
 
 ---
 
-## Installation / Usage
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/<your-username>/vibecoding-assignments.git
-```
-
-2. Navigate to the Assignment A folder:
-
-```bash
-cd vibecoding-assignments/assignment-a
-```
-
-3. Open `index.html` in a **mobile browser**.
-4. Click **Pay via UPI** to trigger the UPI payment.
-5. Wait a few seconds → **Payment Status** updates automatically.
-
----
 
 ## UPI Deep Link Format
 
