@@ -1,73 +1,187 @@
-# Welcome to your Lovable project
+# Habitual Curator 🌀
+**AI-Powered Personalized Micro-Habit Discovery & Tracking App**
 
-## Project info
+Habitual Curator helps users discover, customize, and track unique micro-habits based on their personality, goals, and daily context.  
+Built with a playful, adaptive, and privacy-first approach.
 
-**URL**: https://lovable.dev/projects/48eed56d-5f78-41bd-9895-ba38bd1dde77
+---
 
-## How can I edit this code?
+## 🚀 Overview
 
-There are several ways of editing your application.
+Habitual Curator is a smart, AI-driven habit tracker that suggests **quirky, science-backed micro-habits** and adapts them based on user engagement, feedback, and contextual data.  
+Think: “Stand on one leg while brushing your teeth” or “Send a gratitude text every Thursday.”
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/48eed56d-5f78-41bd-9895-ba38bd1dde77) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+### 👋 Onboarding
+- Captures personality tone, goals, and daily availability.
+- Optional context permissions (calendar, location).
+- Generates personalized initial habit suggestions.
 
-**Use your preferred IDE**
+### 🏠 Dashboard
+- Displays personalized greetings and daily micro-habits.
+- Quick actions: *Do it*, *Remind me*, *Save for later*.
+- Streak & micro-win tracking.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🔍 Discover
+- AI-generated micro-habit feed grouped by themes: Focus, Movement, Creativity, Social, Calm, Sleep.
+- Each card shows duration, trigger, and a short science-backed description.
+- Options to *Save*, *Try now*, or *Customize*.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🧠 Adaptive Engine
+- Learns from completion data, difficulty ratings, and feedback.
+- Suggests simplified or advanced variants dynamically.
+- Uses a lightweight bandit algorithm for experimentation.
 
-Follow these steps:
+### 📊 Progress & Insights
+- Visual analytics (streaks, category distribution, completion rate).
+- Quick journal & export logs (CSV).
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### ⚙️ Settings
+- Manage reminders, saved habits, integrations, and privacy.
+- Delete data locally or from cloud anytime.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🧩 Tech Stack (Lovable Scaffold)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+| Layer | Tech |
+|-------|------|
+| Frontend | React + Tailwind (PWA / Mobile-first) |
+| Backend | Node.js + Express (API stub) |
+| AI Logic | Mock ML module (bandit-based recommender) |
+| Data | seed_data.json (50+ micro-habits) |
+| Storage | Local-first with optional encrypted cloud sync |
+
+---
+
+## 📁 Folder Structure
+
+```
+habitual-curator/
+│
+├── frontend/               # React UI (Tailwind-based)
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   ├── assets/
+│   └── App.jsx
+│
+├── backend/                # Node/Express backend
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   └── server.js
+│
+├── ml/                     # Recommendation logic mock
+│   └── recommender.js
+│
+├── data/
+│   └── seed_data.json
+│
+├── README.md
+└── package.json
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## ⚡ API Endpoints
 
-**Use GitHub Codespaces**
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| GET | `/api/v1/discover?goals=Focus,Creativity&time=10` | Get AI-ranked suggestions |
+| POST | `/api/v1/habits` | Create a custom habit |
+| POST | `/api/v1/sessions` | Log habit completion |
+| GET | `/api/v1/users/{id}/insights` | Fetch user insights |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🧠 Example JSON Models
 
-This project is built with:
+### User
+```json
+{
+  "id": "user_001",
+  "name": "Maya",
+  "personality_tone": "Playful",
+  "goals": ["Focus", "Creativity"],
+  "daily_time_mins": 10
+}
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Habit
+```json
+{
+  "id": "habit_082",
+  "title": "Balance Brush",
+  "duration_mins": 1,
+  "category": "Movement",
+  "difficulty": 1,
+  "trigger": "While brushing teeth"
+}
+```
 
-## How can I deploy this project?
+### Session Log
+```json
+{
+  "id": "session_993",
+  "user_id": "user_001",
+  "habit_id": "habit_082",
+  "timestamp": "2025-10-19T07:32:00+05:30",
+  "rating": "easy"
+}
+```
 
-Simply open [Lovable](https://lovable.dev/projects/48eed56d-5f78-41bd-9895-ba38bd1dde77) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🧪 Acceptance Criteria
 
-Yes, you can!
+- ✅ After onboarding, Discover shows 12+ relevant suggestions.
+- ✅ Logging a habit triggers animation and streak increment.
+- ✅ Adaptive engine simplifies habits after repeated difficulty.
+- ✅ User can export last 30 days of logs as CSV.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🛠️ Setup Instructions
+
+1. **Clone repo** or import from Lovable.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run backend:
+   ```bash
+   cd backend && npm start
+   ```
+4. Run frontend:
+   ```bash
+   cd frontend && npm run dev
+   ```
+
+App will be live at: `http://localhost:5173` (default).
+
+---
+
+## 🧭 Design Notes
+
+- Tone: warm, playful, encouraging.
+- Accessibility: large touch targets, alt text, dyslexia-friendly fonts.
+- Animations: short confetti bursts, emoji micro-celebrations.
+- Optional localization support (EN default).
+
+---
+
+## 📬 Contact / Next Steps
+
+This scaffold is ready for prototype → beta phase.  
+Next tasks:
+- Integrate real ML recommendations.
+- Add Firebase/Clerk authentication.
+- Enable push notifications (web + mobile).
+
+---
+
+**“Tiny habits. Big differences.” — Habitual Curator 🌀**
