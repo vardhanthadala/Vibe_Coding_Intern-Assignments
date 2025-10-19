@@ -49,7 +49,7 @@ upi://pay?pa=merchant@bank&pn=VibeCode+Intern&am=1.00&cu=INR&tn=ORDER12345
 * 📱 SMS confirmation is simulated for demonstration purposes.
 ------
 
-# Habitual Curator 🌀
+# Assignment B - Habitual Curator 🌀
 **AI-Powered Personalized Micro-Habit Discovery & Tracking App**
 
 Habitual Curator helps users discover, customize, and track unique micro-habits based on their personality, goals, and daily context.  
