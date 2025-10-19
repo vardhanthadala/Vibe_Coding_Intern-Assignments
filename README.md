@@ -5,6 +5,9 @@ Habitual Curator helps users discover, customize, and track unique micro-habits 
 Built with a playful, adaptive, and privacy-first approach.
 
 ---
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=flat-square)](https://preview--habit-sparkler.lovable.app/)
+
+---
 
 ## 🚀 Overview
 
