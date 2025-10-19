@@ -55,7 +55,7 @@ upi://pay?pa=merchant@bank&pn=VibeCode+Intern&am=1.00&cu=INR&tn=ORDER12345
 
 ## Hosted Project
 
-[View Live Project](https://vibe-coding-intern-assignment.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=flat-square)](https://vibe-coding-intern-assignment.vercel.app/)
 
 ---
 
