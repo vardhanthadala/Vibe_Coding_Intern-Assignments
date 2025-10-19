@@ -31,7 +31,7 @@ export const SecondaryButton = forwardRef<HTMLButtonElement, HeroButtonProps>(
         ref={ref}
         variant="outline"
         className={cn(
-          "border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth",
+          "border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-smooth",
           className
         )}
         {...props}
